@@ -1,0 +1,30 @@
+.navbar {
+    ul {
+        li {
+            a {
+                padding: 0.5rem;
+                position: relative;
+                transition: 0.3s;
+                margin: 0 1rem;
+                font-weight: 500;
+                &::after {
+                    position: absolute;
+                    content: '';
+                    width: 0;
+                    border-bottom: 1px solid red;
+                }
+            }
+            .active {
+                color: red;
+                &::after {
+                    position: absolute;
+                    content: '';
+                    transition: width 0.3s;
+                    width: 100%;
+                    bottom: 0;
+                    left: 0;
+                }
+            }
+        }
+    }
+}

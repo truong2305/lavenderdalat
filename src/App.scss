@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700');
+html, body {
+  font-family: 'Playfair Display', serif !important;
+  color: #0b1f41 !important;
+  .App {
+    ul {
+      list-style: none;
+      margin-bottom: 0;
+      padding-left: 0;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}
+
