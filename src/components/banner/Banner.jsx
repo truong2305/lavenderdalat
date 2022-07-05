@@ -6,8 +6,8 @@ function Banner() {
   return (
     <section className='banner'>
       <div className='container'>
-        <div className='row'>
-          <div className='col-5'>
+        <div className='row align-items-center'>
+          <div className='col-xl-6 col-xxl-5 col-lg-7 col-md-9 col-12'>
            <div className="banner-title">
            <h1>
               Send

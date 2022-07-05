@@ -2,6 +2,7 @@
 html, body {
   font-family: 'Playfair Display', serif !important;
   color: #0b1f41 !important;
+  
   .App {
     ul {
       list-style: none;
@@ -11,6 +12,29 @@ html, body {
     a {
       text-decoration: none;
       color: inherit;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    section {
+      padding: 150px 0;
+    }
+  }
+  @media (max-width : 767px) {
+    .App {
+      section {
+        padding: 100px 0;
+      }
+    }
+  }
+  @media (max-width : 576px) {
+    font-size: 14px;
+    .App {
+      section {
+        padding: 60px 0;
+      }
     }
   }
 }

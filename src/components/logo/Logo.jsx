@@ -7,6 +7,7 @@ function Logo() {
             <a href="/">
                 <span>LAVE</span>
                 NDER
+                <small className='d-block'>37E Trieu Viet Vuong, Da Lat</small>
             </a>
         </div>
     )

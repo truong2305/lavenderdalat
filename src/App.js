@@ -3,23 +3,22 @@
 import "./App.scss";
 import TheFooter from "./components/footer/TheFooter";
 import TheHeader from "./components/header/TheHeader";
-import { Routes, Route } from "react-router-dom";
+import {Routes, Route} from "react-router-dom";
 import Home from "./views/home/Home";
+import Banner from "./components/banner/Banner";
+import AboutUs from "./views/about/AboutUs";
 
 function App() {
   return (
     <div className='App'>
       <TheHeader />
+      <main>
+      <Banner />
       <Routes>
-        <Route path='/' element={<Home />}>
-          {/* <Route index element={<Home />} />
-          <Route path='teams' element={<Teams />}>
-            <Route path=':teamId' element={<Team />} />
-            <Route path='new' element={<NewTeamForm />} />
-            <Route index element={<LeagueStandings />} />
-          </Route> */}
-        </Route>
+          <Route index path='/' element={<Home />} />
+          <Route path='/about-us' element={<AboutUs />}/>
       </Routes>
+      </main>
       <TheFooter />
     </div>
   );
